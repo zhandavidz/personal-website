@@ -1,5 +1,35 @@
+// site-wide color theme palette:
+$primary: #3828ee;
+$accent: #55fbdc;
+$white: #fff;
+$black: #000;
+
+// other potential accent colors:
+$green: #1CED7D;
+
+// reset defaults
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 400;
+    color: $white;
+    margin: 0;
+    h1, h2, h3, h4, h5, h6, p {
+		-webkit-margin-before: 0px;
+		-webkit-margin-after: 0px;
+		-webkit-margin-start: 0px;
+		-webkit-margin-end: 0px;
+		margin: 0;
+	}
+}
 
 
-h1 {
-    color: rgb(15, 182, 12);
+body {
+    background-color: $primary;
+
+    h1 {
+        color: $white;
+        font-weight: 900;
+        font-size: 100px;
+        
+    }
 }
