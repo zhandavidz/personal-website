@@ -1,0 +1,30 @@
+@use '/styles/default-styles'
+
+/* colors available:
+ * $primary: #3828ee;
+ * $accent: #55fbdc;
+ * $white: #fff;
+ * $black: #000;
+ *
+ * $green: #1CED7D;
+ */ 
+
+
+body {
+    background-color: $primary;
+
+    h1 {
+        color: $white;
+        font-weight: 900;
+        font-size: 100px;
+        
+    }
+
+    h2 {
+
+        a {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}
