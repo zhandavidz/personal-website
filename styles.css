@@ -20,3 +20,7 @@ body h1 {
   font-weight: 900;
   font-size: 100px;
 }
+body h2 a {
+  color: #fff;
+  text-decoration: none;
+}
