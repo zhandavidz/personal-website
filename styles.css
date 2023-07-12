@@ -12,6 +12,14 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p {
   margin: 0;
 }
 
+/* colors available:
+ * $primary: #3828ee;
+ * $accent: #55fbdc;
+ * $white: #fff;
+ * $black: #000;
+ *
+ * $green: #1CED7D;
+ */
 body {
   background-color: #3828ee;
 }

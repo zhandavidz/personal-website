@@ -1,4 +1,4 @@
-@use '/styles/default-styles'
+@use '/default-styles' as defaults;
 
 /* colors available:
  * $primary: #3828ee;
@@ -7,14 +7,13 @@
  * $black: #000;
  *
  * $green: #1CED7D;
- */ 
-
+ */
 
 body {
-    background-color: $primary;
+    background-color: defaults.$primary;
 
     h1 {
-        color: $white;
+        color: defaults.$white;
         font-weight: 900;
         font-size: 100px;
         
@@ -23,7 +22,7 @@ body {
     h2 {
 
         a {
-            color: $white;
+            color: defaults.$white;
             text-decoration: none;
         }
     }
