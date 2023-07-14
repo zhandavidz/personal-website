@@ -2,6 +2,8 @@
 // 	require $_SERVER['DOCUMENT_ROOT'].'/favicons/favicon.php';
 // ?>
 
+// NOTE: this is from: https://medium.com/front-end-weekly/how-to-build-reusable-html-components-without-component-based-frameworks-2f7747f4c5db
+
 // TODO: Add favicons
 
 class HeadTags extends HTMLElement {
