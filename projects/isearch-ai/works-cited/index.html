@@ -1,19 +1,19 @@
-<?php include $_SERVER['DOCUMENT_ROOT'].'/site-parts/code-text.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Works Cited</title>
 
-	<meta charset="utf-8">
 	<meta name="description" content="This is an annotated works cited so I can give credit to the people whose work I used. (MLA)">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-	<?php require $_SERVER['DOCUMENT_ROOT'].'/site-parts/head-tags.php'; ?>
-
-	<link rel="stylesheet" type="text/css" href="/projects/school/isearch/general-styles.css">
-	<link rel="stylesheet" type="text/css" href="/projects/school/isearch/article.css">
+	<link rel="stylesheet" type="text/css" href="../general-styles.css">
+	<link rel="stylesheet" type="text/css" href="../article.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<script type="text/javascript" src="/defaults/head-tags.js"></script>
+	<head-tags></head-tags>
+	<link rel="stylesheet" type="text/css" href="../isearch-defaults.css">
+
+	<!-- handle on load back button -->
 	<script type="text/javascript">
 		$( window ).on( "load", function() {
 			$("div#back").on("click", function() {
@@ -35,7 +35,8 @@
 
 </head>
 <body>
-	<?php include $_SERVER['DOCUMENT_ROOT'].'/projects/school/isearch/nav.php'; ?>
+	<script type="text/javascript" src="../nav.js"></script>
+	<nav-bar></nav-bar>
 
 	<div id="back" title="Return to the Article">
 		<h5>Return to Article</h5>
