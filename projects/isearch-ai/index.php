@@ -1,4 +1,3 @@
-<?php include $_SERVER['DOCUMENT_ROOT'].'/site-parts/code-text.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,14 +7,19 @@
 	<meta name="description" content="I am Jack Wilson, Ph.D., and I am a postdoc researcher for BAIR. On my website, I have some of my published papers. *not real person*">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="/projects/school/isearch/general-styles.css">
-	<link rel="stylesheet" type="text/css" href="/projects/school/isearch/article.css">
+	<link rel="stylesheet" type="text/css" href="general-styles.css">
+	<link rel="stylesheet" type="text/css" href="article.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
+	<!-- make new head-tags, but without the jquery, with fontawesome, and with updated roboto, include the google thing -->
 	<?php require $_SERVER['DOCUMENT_ROOT'].'/site-parts/head-tags.php'; ?>
+	<link rel="stylesheet" type="text/css" href="isearch-defaults.css">
 </head>
 <body>
+	<!-- use nav.css -->
 	<?php include $_SERVER['DOCUMENT_ROOT'].'/projects/school/isearch/nav.php'; ?>
+
+	<!-- content -->
 
 	<div id="toc-skip">
 		<a href="#toc">Table of Contents</a>
