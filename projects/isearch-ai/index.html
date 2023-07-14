@@ -11,13 +11,14 @@
 	<link rel="stylesheet" type="text/css" href="article.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
-	<!-- make new head-tags, but without the jquery, with fontawesome, and with updated roboto, include the google thing -->
-	<?php require $_SERVER['DOCUMENT_ROOT'].'/site-parts/head-tags.php'; ?>
+
+	<script type="text/javascript" src="/defaults/head-tags.js"></script>
+	<head-tags></head-tags>
 	<link rel="stylesheet" type="text/css" href="isearch-defaults.css">
 </head>
 <body>
-	<!-- use nav.css -->
-	<?php include $_SERVER['DOCUMENT_ROOT'].'/projects/school/isearch/nav.php'; ?>
+	<script type="text/javascript" src="nav.js"></script>
+	<nav-bar></nav-bar>
 
 	<!-- content -->
 
@@ -54,7 +55,7 @@
 	<h2 id="toc">Table of Contents:</h2>
 
 	<div id="sub-nav">
-		<a href="powerpoint/">
+		<a href="powerpoint">
 			<div id="powerpoint" title="The History of AI - Powerpoint">
 				<div class="num">
 					<h4>1</h4>
@@ -67,7 +68,7 @@
 				</div>
 			</div>
 		</a>
-		<a href="essay/">
+		<a href="essay">
 			<div id="essay" title="The Future of AI - Essay">
 				<div class="num">
 					<h4>2</h4>
@@ -80,7 +81,7 @@
 				</div>
 			</div>
 		</a>
-		<a href="news-article/">
+		<a href="news-article">
 			<div id="news-article" title="AI Is Too Dumb For Us - News Article">
 				<div class="num">
 					<h4>3</h4>
@@ -93,7 +94,7 @@
 				</div>
 			</div>
 		</a>
-		<a href="interview/">
+		<a href="interview">
 			<div id="interview" title="An Interview of Me - Interview">
 				<div class="num">
 					<h4>4</h4>
@@ -106,7 +107,7 @@
 				</div>
 			</div>
 		</a>
-		<a href="journal/">
+		<a href="journal">
 			<div id="journal" title="Weekly Journal - Journal">
 				<div class="num">
 					<h4>5</h4>
@@ -119,7 +120,7 @@
 				</div>
 			</div>
 		</a>
-		<a href="works-cited/">
+		<a href="works-cited">
 			<div id="works-cited" title="Annotated Works Cited">
 				<div class="num">
 					<h4>6</h4>
