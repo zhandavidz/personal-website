@@ -9,6 +9,10 @@
 class HeadTags extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+            <!-- favicons -->
             <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
             <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
             <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
@@ -21,15 +25,10 @@ class HeadTags extends HTMLElement {
             
             
 
-
             <script src="https://kit.fontawesome.com/ccf5dd8bbb.js" crossorigin="anonymous"></script>
 
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
             
-            
-            <meta charset="utf-8">
-            
-            <meta name="viewport" content="width=device-width, initial-scale=1">
             
             <!-- Global site tag (gtag.js) - Google Analytics -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118954244-2"></script>
