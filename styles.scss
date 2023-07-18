@@ -69,9 +69,44 @@ body {
 
     }
 
-    img#david-photo {
-        border-radius: 100%;
-        width: 200px;
-        // height: 200px;
+    div#panel-wrapper {
+        // width: 100%;
+        overflow: auto;
+
+        div.panel {
+            width: 50%;
+        }
+        
+        div#left-panel {
+            float: left;
+            
+            div.portfolio-panel {
+                width: 100%;
+                height: 300px;
+            }
+
+            div#programming-panel {
+                background-color: blue;
+            }
+            div#photography-panel {
+                background-color: purple;
+            }
+        }
+    
+        div#right-panel {
+            float: right;
+            background-color: aquamarine;
+            height: 100%;
+            
+            img#david-photo {
+                padding-top: 30px;
+                border-radius: 100%;
+                width: 350px;
+                margin: auto;
+                display: block;
+            }
+        }
     }
+
+
 }
