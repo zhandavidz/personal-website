@@ -71,9 +71,9 @@ body {
 
     div#panel-wrapper {
         // width: 100%;
-        overflow: auto;
+        // overflow: auto;
 
-        $height-of-panels: 600px;
+        $height-of-panels: 700px;
 
         div.panel {
             width: 50%;
@@ -85,27 +85,112 @@ body {
             div.portfolio-panel {
                 width: 100%;
                 height: calc($height-of-panels / 2);
+                overflow: hidden;
+            }
+
+            a {
+                position: relative;
+                padding: 0;
+                display: block;
+                z-index: 1;
+
+                h2 {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    color: defaults.$white;
+                    z-index: 5;
+                    font-weight: 700;
+                    font-size: 50px;
+                    white-space: nowrap;
+                }
+            }
+            
+            div.zoom-child {
+                width: 100%;
+                height: 100%;
+                background-color: black; /* fallback color */
+                background-image: url("/assets/car-photo.jpg");
+                background-position: center;
+                background-size: cover;
+                transition: all .5s;
+            }
+            .zoom-parent:hover .zoom-child,
+            .zoom-parent:focus .zoom-child {
+                transform: scale(1.2);
             }
 
             div#programming-panel {
-                background-color: blue;
+                // background-color: blue;
+
+                .zoom-child {
+                    background-color: gray; /* fallback color */
+                    background-image: url("/assets/keyboard-photo.jpg");
+                }
             }
             div#photography-panel {
-                background-color: purple;
+                // background-color: purple;
+
+                .zoom-child {
+                    background-color: black; /* fallback color */
+                    background-image: url("/assets/car-photo.jpg");
+                }
             }
         }
     
         div#right-panel {
             float: right;
-            background-color: aquamarine;
+            background-color: defaults.$primary;
             height: $height-of-panels;
             
             img#david-photo {
                 padding-top: 30px;
+                padding-bottom: 10px;
                 border-radius: 100%;
                 width: 350px;
                 margin: auto;
                 display: block;
+            }
+
+            div#socials-wrapper {
+                text-align: center;
+                padding-bottom: 30px;
+
+                a.button {
+                    color: defaults.$white;
+                    background-color: gray; // TODO: find a specific color
+                    border-radius: 100px;
+                    padding: 10px;
+                    text-decoration: none;
+                    display: inline-block;
+                    // height: 30px;
+                }
+            }
+            
+            div#about-me-wrapper {
+                width: 80%;
+                margin: auto;
+                // text-align: center;
+                // font-family: "Roboto Mono";
+
+                p {
+                    font-size: 18px;
+                    line-height: 1.25;
+                    color: defaults.$white;
+                    padding-bottom: 10px;
+
+                    a {
+                        color: defaults.$accent;
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                
             }
         }
     }

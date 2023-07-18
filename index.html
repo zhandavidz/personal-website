@@ -20,20 +20,34 @@
         
         <div id="panel-wrapper">
             <div id="left-panel" class="panel">
-                <div id="programming-panel" class="portfolio-panel">
-                    <h2><a href="/projects">Programming Portfolio</a></h2>
-                </div>
-                <div id="photography-panel" class="portfolio-panel">
-                    <h2><a href="/photography">Photography Portfolio</a></h2>
-                </div>
+                <a href="/projects">
+                    <div id="programming-panel" class="portfolio-panel zoom-parent">
+                        <h2>Programming</h2>
+                        <div class="zoom-child">
+                        </div>
+                    </div>
+                </a>
+                <a href="/photography">
+                    <div id="photography-panel" class="portfolio-panel zoom-parent">
+                        <h2>Photography</h2>
+                        <div class="zoom-child">
+                        </div>
+                    </div>
+                </a>
             </div>
             <div id="right-panel" class="panel">
                 <img src="/assets/prom-pfp.jpg" alt="photo of David Zhan" id="david-photo">
-                <h2><a href="/resume.pdf">Resume</a></h2>
-                <h2><a href="https://linkedin.com/in/zhandavidz">LinkedIn</a></h2>
-                <h2><a href="https://github.com/zhandavidz">GitHub</a></h2>
-                <p>Some example text explaining who I am. Lorem ipsum funny haha.</p>
-                <p>I am currently looking for internships and/or other work. Feel free to contact me at <a href="mailto:zhandavidz@gmail.com">zhandavidz@gmail.com</a>.</p>
+
+                <div id="socials-wrapper">
+                    <a class="button" href="https://linkedin.com/in/zhandavidz">LinkedIn</a>
+                    <a class="button" href="https://github.com/zhandavidz">GitHub</a>
+                    <a class="button" href="/resume.pdf">Resume</a>
+                </div>
+
+                <div id="about-me-wrapper">
+                    <p>I'm a Computer Science major at the University of Massachusetts Amherst (UMass Amherst '25). I'm currently interested in web development, game design, artificial intelligence, and data science.</p>
+                    <p>I am actively looking for internships and/or other work. Feel free to contact me at <a href="mailto:zhandavidz@gmail.com">zhandavidz@gmail.com</a>.</p>
+                </div>
             </div>
         </div>
         

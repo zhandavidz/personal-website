@@ -61,9 +61,6 @@ body div#header div#hello-wrapper h4 {
   text-align: left;
   font-family: "Roboto Mono";
 }
-body div#panel-wrapper {
-  overflow: auto;
-}
 body div#panel-wrapper div.panel {
   width: 50%;
 }
@@ -72,23 +69,87 @@ body div#panel-wrapper div#left-panel {
 }
 body div#panel-wrapper div#left-panel div.portfolio-panel {
   width: 100%;
-  height: 300px;
+  height: 350px;
+  overflow: hidden;
 }
-body div#panel-wrapper div#left-panel div#programming-panel {
-  background-color: blue;
+body div#panel-wrapper div#left-panel a {
+  position: relative;
+  padding: 0;
+  display: block;
+  z-index: 1;
 }
-body div#panel-wrapper div#left-panel div#photography-panel {
-  background-color: purple;
+body div#panel-wrapper div#left-panel a h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 5;
+  font-weight: 700;
+  font-size: 50px;
+  white-space: nowrap;
+}
+body div#panel-wrapper div#left-panel div.zoom-child {
+  width: 100%;
+  height: 100%;
+  background-color: black; /* fallback color */
+  background-image: url("/assets/car-photo.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: all 0.5s;
+}
+body div#panel-wrapper div#left-panel .zoom-parent:hover .zoom-child,
+body div#panel-wrapper div#left-panel .zoom-parent:focus .zoom-child {
+  transform: scale(1.2);
+}
+body div#panel-wrapper div#left-panel div#programming-panel .zoom-child {
+  background-color: gray; /* fallback color */
+  background-image: url("/assets/keyboard-photo.jpg");
+}
+body div#panel-wrapper div#left-panel div#photography-panel .zoom-child {
+  background-color: black; /* fallback color */
+  background-image: url("/assets/car-photo.jpg");
 }
 body div#panel-wrapper div#right-panel {
   float: right;
-  background-color: aquamarine;
-  height: 600px;
+  background-color: #3828ee;
+  height: 700px;
 }
 body div#panel-wrapper div#right-panel img#david-photo {
   padding-top: 30px;
+  padding-bottom: 10px;
   border-radius: 100%;
   width: 350px;
   margin: auto;
   display: block;
+}
+body div#panel-wrapper div#right-panel div#socials-wrapper {
+  text-align: center;
+  padding-bottom: 30px;
+}
+body div#panel-wrapper div#right-panel div#socials-wrapper a.button {
+  color: #fff;
+  background-color: gray;
+  border-radius: 100px;
+  padding: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+body div#panel-wrapper div#right-panel div#about-me-wrapper {
+  width: 80%;
+  margin: auto;
+}
+body div#panel-wrapper div#right-panel div#about-me-wrapper p {
+  font-size: 18px;
+  line-height: 1.25;
+  color: #fff;
+  padding-bottom: 10px;
+}
+body div#panel-wrapper div#right-panel div#about-me-wrapper p a {
+  color: #55fbdc;
+  text-decoration: none;
+}
+body div#panel-wrapper div#right-panel div#about-me-wrapper p a:hover {
+  text-decoration: underline;
 }
