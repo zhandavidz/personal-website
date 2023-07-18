@@ -83,7 +83,7 @@ body div#panel-wrapper div#left-panel div#photography-panel {
 body div#panel-wrapper div#right-panel {
   float: right;
   background-color: aquamarine;
-  height: 100%;
+  height: 600px;
 }
 body div#panel-wrapper div#right-panel img#david-photo {
   padding-top: 30px;

@@ -73,6 +73,8 @@ body {
         // width: 100%;
         overflow: auto;
 
+        $height-of-panels: 600px;
+
         div.panel {
             width: 50%;
         }
@@ -82,7 +84,7 @@ body {
             
             div.portfolio-panel {
                 width: 100%;
-                height: 300px;
+                height: calc($height-of-panels / 2);
             }
 
             div#programming-panel {
@@ -96,7 +98,7 @@ body {
         div#right-panel {
             float: right;
             background-color: aquamarine;
-            height: 100%;
+            height: $height-of-panels;
             
             img#david-photo {
                 padding-top: 30px;
