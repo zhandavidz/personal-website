@@ -1,4 +1,5 @@
 @use 'defaults/default-styles' as defaults;
+@use 'defaults/typed' as typed;
 
 /* colors available:
  * $primary: #3828ee;
@@ -64,6 +65,9 @@ body {
                 text-align: left;
                 font-family: "Roboto Mono";
 
+                span#typewriter-text {
+                    @include typed.typed("programmer", "photographer", "student", "web developer");
+                }
             }
         }
 
