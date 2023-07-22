@@ -1,6 +1,14 @@
 // NOTE: this is from: https://medium.com/front-end-weekly/how-to-build-reusable-html-components-without-component-based-frameworks-2f7747f4c5db
 
 
+function dynamicallyLoadScript(url) {
+    let loadScript = document.createElement("script"); // create a script DOM node
+    loadScript.src = url; // set its src to the provided URL
+    document.head.appendChild(loadScript);
+}
+
+dynamicallyLoadScript(`https://kit.fontawesome.com/ccf5dd8bbb.js`);
+
 class HeadTags extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -21,6 +29,10 @@ class HeadTags extends HTMLElement {
             
 
             <script src="https://kit.fontawesome.com/ccf5dd8bbb.js" crossorigin="anonymous"></script>
+            <script src="https://kit.fontawesome.com/ccf5dd8bbb.js" crossorigin="anonymous"></script>
+            <script>
+                console.log("test");
+            </script>
 
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700,900">
@@ -38,5 +50,7 @@ class HeadTags extends HTMLElement {
         `;
     }
 }
+
+
 
 customElements.define('head-tags', HeadTags);
