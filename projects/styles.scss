@@ -11,13 +11,28 @@
 
 div#container {
 
+    h1 {
+        text-align: center;
+    }
+
     div.project {
-        
+        width: min-content;
+        margin: 10px auto;
+        background-color: rgb(232, 232, 232);
 
         div.info-container {
             width: 600px;
 
+            strong {
+                font-weight: 700;
+            }
+
+            div.date {
+                font-style: italic;
+            }
+
             div.link-bar {
+                // TODO: consider making these bubbles
                 
                 a {
                     color: defaults.$primary;

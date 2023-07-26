@@ -20,8 +20,22 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p {
  *
  * $green: #1CED7D;
  */
+div#container h1 {
+  text-align: center;
+}
+div#container div.project {
+  width: min-content;
+  margin: 10px auto;
+  background-color: rgb(232, 232, 232);
+}
 div#container div.project div.info-container {
   width: 600px;
+}
+div#container div.project div.info-container strong {
+  font-weight: 700;
+}
+div#container div.project div.info-container div.date {
+  font-style: italic;
 }
 div#container div.project div.info-container div.link-bar a {
   color: #3828ee;
