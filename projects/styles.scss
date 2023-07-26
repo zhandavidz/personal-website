@@ -1,21 +1,47 @@
 @use 'defaults/default-styles' as defaults;
 
-p {
-    padding: 10px 5%;
-    width: 50%;
-}
+/* colors available:
+ * $primary: #3828ee;
+ * $accent: #55fbdc;
+ * $white: #fff;
+ * $black: #000;
+ *
+ * $green: #1CED7D;
+ */
 
-.link-bar {
-    display: block;
-    padding-top: 5px;
-}
+div#container {
 
-h3 {
-    width: 50%;
-    padding: 0 5%;
-    padding-top: 10px;
-}
+    h1 {
+        text-align: center;
+    }
 
-a {
-    color: defaults.$primary;
+    div.project {
+        width: min-content;
+        margin: 10px auto;
+        background-color: rgb(232, 232, 232);
+
+        div.info-container {
+            width: 600px;
+
+            strong {
+                font-weight: 700;
+            }
+
+            div.date {
+                font-style: italic;
+            }
+
+            div.link-bar {
+                // TODO: consider making these bubbles
+                
+                a {
+                    color: defaults.$primary;
+                }
+            }
+        }
+    }
+
+    
+    
+    
 }
