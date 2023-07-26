@@ -12,22 +12,17 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p {
   margin: 0;
 }
 
-p {
-  padding: 10px 5%;
-  width: 50%;
+/* colors available:
+ * $primary: #3828ee;
+ * $accent: #55fbdc;
+ * $white: #fff;
+ * $black: #000;
+ *
+ * $green: #1CED7D;
+ */
+div#container div.project div.info-container {
+  width: 600px;
 }
-
-.link-bar {
-  display: block;
-  padding-top: 5px;
-}
-
-h3 {
-  width: 50%;
-  padding: 0 5%;
-  padding-top: 10px;
-}
-
-a {
+div#container div.project div.info-container div.link-bar a {
   color: #3828ee;
 }

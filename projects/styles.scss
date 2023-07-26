@@ -1,21 +1,32 @@
 @use 'defaults/default-styles' as defaults;
 
-p {
-    padding: 10px 5%;
-    width: 50%;
-}
+/* colors available:
+ * $primary: #3828ee;
+ * $accent: #55fbdc;
+ * $white: #fff;
+ * $black: #000;
+ *
+ * $green: #1CED7D;
+ */
 
-.link-bar {
-    display: block;
-    padding-top: 5px;
-}
+div#container {
 
-h3 {
-    width: 50%;
-    padding: 0 5%;
-    padding-top: 10px;
-}
+    div.project {
+        
 
-a {
-    color: defaults.$primary;
+        div.info-container {
+            width: 600px;
+
+            div.link-bar {
+                
+                a {
+                    color: defaults.$primary;
+                }
+            }
+        }
+    }
+
+    
+    
+    
 }
