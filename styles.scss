@@ -10,6 +10,10 @@
  * $green: #1CED7D;
  */
 
+// screen sizes:
+$full-wide: 1100px;
+$half-wide: 900px;
+
 body {
     // background-color: defaults.$primary;
 
@@ -150,12 +154,18 @@ body {
             height: $height-of-panels;
             
             img#david-photo {
+                // $photo-size: 350px;
+
                 padding-top: 30px;
                 padding-bottom: 10px;
                 border-radius: 100%;
-                width: 350px;
+                width: $full-wide * 0.3; // 330px, is 60% of the half panel
                 margin: auto;
                 display: block;
+
+                @media only screen and (max-width: $full-wide) {
+                    width: 60%;
+                }
             }
 
             div#socials-wrapper {
@@ -184,6 +194,7 @@ body {
                     line-height: 1.25;
                     color: defaults.$white;
                     padding-bottom: 10px;
+                    text-align: justify;
 
                     a {
                         color: defaults.$accent;

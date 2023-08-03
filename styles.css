@@ -565,9 +565,14 @@ body div#panel-wrapper div#right-panel img#david-photo {
   padding-top: 30px;
   padding-bottom: 10px;
   border-radius: 100%;
-  width: 350px;
+  width: 330px;
   margin: auto;
   display: block;
+}
+@media only screen and (max-width: 1100px) {
+  body div#panel-wrapper div#right-panel img#david-photo {
+    width: 60%;
+  }
 }
 body div#panel-wrapper div#right-panel div#socials-wrapper {
   text-align: center;
@@ -590,6 +595,7 @@ body div#panel-wrapper div#right-panel div#about-me-wrapper p {
   line-height: 1.25;
   color: #fff;
   padding-bottom: 10px;
+  text-align: justify;
 }
 body div#panel-wrapper div#right-panel div#about-me-wrapper p a {
   color: #55fbdc;
