@@ -17,6 +17,7 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p {
  * $accent: #55fbdc;
  * $white: #fff;
  * $black: #000;
+ * $dark-gray: #3d3d3d;
  *
  * $green: #1CED7D;
  */
@@ -27,15 +28,26 @@ div#container div.project {
   width: min-content;
   margin: 10px auto;
   background-color: rgb(232, 232, 232);
+  width: 600px;
+}
+@media only screen and (max-width: 660px) {
+  div#container div.project {
+    width: 90%;
+  }
 }
 div#container div.project div.info-container {
-  width: 600px;
+  padding: 10px;
 }
 div#container div.project div.info-container strong {
   font-weight: 700;
 }
 div#container div.project div.info-container div.date {
   font-style: italic;
+  color: #565656;
+  padding: 2px 0;
+}
+div#container div.project div.info-container div.description {
+  text-align: justify;
 }
 div#container div.project div.info-container div.link-bar a {
   color: #3828ee;
