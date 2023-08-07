@@ -51,7 +51,7 @@ body div#header div#hello-wrapper h6 {
 }
 body div#header div#hello-wrapper h1 {
   display: inline-block;
-  text-align: center;
+  text-align: left;
   color: #fff;
   font-weight: 900;
   font-size: 100px;
@@ -509,21 +509,21 @@ body div#header div#hello-wrapper h4 span#typewriter-text::after {
 body div#panel-wrapper div.panel {
   width: 50%;
 }
-body div#panel-wrapper div#left-panel {
+body div#panel-wrapper div#link-panel {
   float: left;
 }
-body div#panel-wrapper div#left-panel div.portfolio-panel {
+body div#panel-wrapper div#link-panel div.portfolio-panel {
   width: 100%;
   height: 350px;
   overflow: hidden;
 }
-body div#panel-wrapper div#left-panel a {
+body div#panel-wrapper div#link-panel a {
   position: relative;
   padding: 0;
   display: block;
   z-index: 1;
 }
-body div#panel-wrapper div#left-panel a h2 {
+body div#panel-wrapper div#link-panel a h2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -535,7 +535,7 @@ body div#panel-wrapper div#left-panel a h2 {
   font-size: 50px;
   white-space: nowrap;
 }
-body div#panel-wrapper div#left-panel div.zoom-child {
+body div#panel-wrapper div#link-panel div.zoom-child {
   width: 100%;
   height: 100%;
   background-color: black; /* fallback color */
@@ -544,36 +544,41 @@ body div#panel-wrapper div#left-panel div.zoom-child {
   background-size: cover;
   transition: all 0.5s;
 }
-body div#panel-wrapper div#left-panel .zoom-parent:hover .zoom-child,
-body div#panel-wrapper div#left-panel .zoom-parent:focus .zoom-child {
+body div#panel-wrapper div#link-panel .zoom-parent:hover .zoom-child,
+body div#panel-wrapper div#link-panel .zoom-parent:focus .zoom-child {
   transform: scale(1.2);
 }
-body div#panel-wrapper div#left-panel div#programming-panel .zoom-child {
+body div#panel-wrapper div#link-panel div#programming-panel .zoom-child {
   background-color: gray; /* fallback color */
   background-image: url("/assets/keyboard-photo.jpg");
 }
-body div#panel-wrapper div#left-panel div#photography-panel .zoom-child {
+body div#panel-wrapper div#link-panel div#photography-panel .zoom-child {
   background-color: black; /* fallback color */
   background-image: url("/assets/car-photo.jpg");
 }
-body div#panel-wrapper div#right-panel {
+body div#panel-wrapper div#about-panel {
   float: right;
   background-color: #3828ee;
   height: 700px;
 }
-body div#panel-wrapper div#right-panel img#david-photo {
+body div#panel-wrapper div#about-panel img#david-photo {
   padding-top: 30px;
   padding-bottom: 10px;
   border-radius: 100%;
-  width: 350px;
+  width: 330px;
   margin: auto;
   display: block;
 }
-body div#panel-wrapper div#right-panel div#socials-wrapper {
+@media only screen and (max-width: 1100px) {
+  body div#panel-wrapper div#about-panel img#david-photo {
+    width: 60%;
+  }
+}
+body div#panel-wrapper div#about-panel div#socials-wrapper {
   text-align: center;
   padding-bottom: 30px;
 }
-body div#panel-wrapper div#right-panel div#socials-wrapper a.button {
+body div#panel-wrapper div#about-panel div#socials-wrapper a.button {
   color: #fff;
   background-color: gray;
   border-radius: 100px;
@@ -581,20 +586,153 @@ body div#panel-wrapper div#right-panel div#socials-wrapper a.button {
   text-decoration: none;
   display: inline-block;
 }
-body div#panel-wrapper div#right-panel div#about-me-wrapper {
+body div#panel-wrapper div#about-panel div#about-me-wrapper {
   width: 80%;
   margin: auto;
 }
-body div#panel-wrapper div#right-panel div#about-me-wrapper p {
+body div#panel-wrapper div#about-panel div#about-me-wrapper p {
   font-size: 18px;
   line-height: 1.25;
   color: #fff;
   padding-bottom: 10px;
+  text-align: justify;
 }
-body div#panel-wrapper div#right-panel div#about-me-wrapper p a {
+body div#panel-wrapper div#about-panel div#about-me-wrapper p a {
   color: #55fbdc;
   text-decoration: none;
 }
-body div#panel-wrapper div#right-panel div#about-me-wrapper p a:hover {
+body div#panel-wrapper div#about-panel div#about-me-wrapper p a:hover {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px) {
+  body div#panel-wrapper div.panel {
+    width: 100%;
+  }
+  body div#panel-wrapper div#link-panel div.portfolio-panel {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+  }
+  body div#panel-wrapper div#link-panel a {
+    position: relative;
+    padding: 0;
+    display: block;
+    z-index: 1;
+  }
+  body div#panel-wrapper div#link-panel a h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 5;
+    font-weight: 700;
+    font-size: 50px;
+    white-space: nowrap;
+  }
+  body div#panel-wrapper div#about-panel {
+    height: auto;
+    padding: 30px 0;
+  }
+  body div#panel-wrapper div#about-panel img#david-photo {
+    padding-top: 0;
+    padding-bottom: 10px;
+    border-radius: 100%;
+    width: 270px;
+    margin: auto;
+    display: block;
+  }
+  body div#panel-wrapper div#about-panel div#socials-wrapper {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  body div#panel-wrapper div#about-panel div#socials-wrapper a.button {
+    border-radius: 100px;
+    padding: 10px;
+  }
+  body div#panel-wrapper div#about-panel div#about-me-wrapper {
+    width: 80%;
+    margin: auto;
+  }
+  body div#panel-wrapper div#about-panel div#about-me-wrapper p {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  body div#panel-wrapper div#link-panel {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  body div#panel-wrapper div#link-panel div.portfolio-panel {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+  }
+  body div#panel-wrapper div#link-panel a {
+    position: relative;
+    padding: 0;
+    display: block;
+    z-index: 1;
+    width: 50%;
+    height: fit-content;
+  }
+  body div#panel-wrapper div#link-panel a h2 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body div#panel-wrapper div#link-panel div.portfolio-panel {
+    height: 200px;
+  }
+  body div#panel-wrapper div#link-panel a h2 {
+    font-size: 40px;
+  }
+  body div#panel-wrapper div#about-panel div#about-me-wrapper p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  body div#header div#hello-wrapper h6 {
+    font-size: 23px;
+  }
+  body div#header div#hello-wrapper h1 {
+    font-size: 80px;
+    letter-spacing: 12px;
+  }
+  body div#header div#hello-wrapper h4 {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body div#header {
+    white-space: normal;
+  }
+  body div#header div#hello-wrapper {
+    padding: 0 10px;
+  }
+  body div#header div#hello-wrapper h6 {
+    font-size: 20px;
+  }
+  body div#header div#hello-wrapper h1 {
+    font-size: 60px;
+    letter-spacing: 3px;
+  }
+  body div#header div#hello-wrapper h4 {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  body div#header div#hello-wrapper h6 {
+    font-size: 20px;
+  }
+  body div#header div#hello-wrapper h1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+  }
+  body div#header div#hello-wrapper h4 {
+    font-size: 23px;
+  }
 }

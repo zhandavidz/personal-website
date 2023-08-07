@@ -10,6 +10,15 @@
  * $green: #1CED7D;
  */
 
+// screen sizes:
+$extra-wide: 1100px;
+$wide: 900px;
+$medium: 600px;
+$small: 500px;
+
+// header screen sizes:
+$header-medium: 750px;
+
 body {
     // background-color: defaults.$primary;
 
@@ -54,7 +63,7 @@ body {
                 // width: fit-content;
                 // margin: auto;
                 display: inline-block;
-                text-align: center;
+                text-align: left;
                 color: defaults.$white;
                 font-weight: 900;
                 font-size: 100px;
@@ -83,7 +92,7 @@ body {
             width: 50%;
         }
         
-        div#left-panel {
+        div#link-panel {
             float: left;
             
             div.portfolio-panel {
@@ -144,18 +153,24 @@ body {
             }
         }
     
-        div#right-panel {
+        div#about-panel {
             float: right;
             background-color: defaults.$primary;
             height: $height-of-panels;
             
             img#david-photo {
+                // $photo-size: 350px;
+
                 padding-top: 30px;
                 padding-bottom: 10px;
                 border-radius: 100%;
-                width: 350px;
+                width: $extra-wide * 0.3; // 330px, is 60% of the half panel
                 margin: auto;
                 display: block;
+
+                @media only screen and (max-width: $extra-wide) {
+                    width: 60%;
+                }
             }
 
             div#socials-wrapper {
@@ -184,6 +199,7 @@ body {
                     line-height: 1.25;
                     color: defaults.$white;
                     padding-bottom: 10px;
+                    text-align: justify;
 
                     a {
                         color: defaults.$accent;
@@ -200,4 +216,215 @@ body {
     }
 
 
+}
+
+@media only screen and (max-width: $wide) {
+    body {
+        div#panel-wrapper {
+            div.panel {
+                width: 100%;
+            }
+            
+            div#link-panel {
+                
+                div.portfolio-panel {
+                    width: 100%;
+                    height: 250px;
+                    overflow: hidden;
+                }
+    
+                a {
+                    position: relative;
+                    padding: 0;
+                    display: block;
+                    z-index: 1;
+    
+                    h2 {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                        color: defaults.$white;
+                        z-index: 5;
+                        font-weight: 700;
+                        font-size: 50px;
+                        white-space: nowrap;
+                    }
+                }
+            }
+
+            div#about-panel {
+                height: auto;
+                padding: 30px 0;
+                
+                img#david-photo {
+                    padding-top:  0;
+                    padding-bottom: 10px;
+                    border-radius: 100%;
+                    width: 270px; // 330px, is 60% of the half panel
+                    margin: auto;
+                    display: block;
+    
+                    
+                }
+    
+                div#socials-wrapper {
+                    text-align: center;
+                    padding-bottom: 30px;
+    
+                    a.button {
+                        border-radius: 100px;
+                        padding: 10px;
+                    }
+                }
+                
+                div#about-me-wrapper {
+                    width: 80%;
+                    margin: auto;
+    
+                    p {
+                        font-size: 18px;
+                        padding-bottom: 10px;
+                    }
+                    
+                }
+            }
+        }
+    
+    
+    }
+}
+
+// switch the link panels to be side by side
+@media only screen and (min-width: ($medium)) and (max-width: $wide) {
+    
+    body {
+        div#panel-wrapper {
+            // switch the link panels to be stacked again
+            div#link-panel {
+                
+                div.portfolio-panel {
+                    width: 100%;
+                    height: 250px;
+                    overflow: hidden;
+                }
+                display: flex;
+                flex-flow: row nowrap;
+    
+                a {
+                    position: relative;
+                    padding: 0;
+                    display: block;
+                    z-index: 1;
+
+                    width: 50%;
+                    height: fit-content;
+                    
+
+                    // div#programming-panel {
+                    //     && {
+                    //         float: left;
+                    //     }
+                    // }
+                    // div#photography-panel {
+                    //     && {
+                    //         float: right;
+                    //     }
+                    // }
+    
+                    h2 {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $medium) {
+    body {
+        div#panel-wrapper {
+
+            div#link-panel {
+                div.portfolio-panel {
+                    height: 200px;
+                }
+    
+                a {
+                    h2 {
+                        font-size: 40px;
+                    }
+                }
+            }
+
+            div#about-panel {
+                div#about-me-wrapper {
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// NOW TO DEAL WITH HEADER DYNAMICNESS:
+@media only screen and (max-width: $header-medium) {
+    body {
+        div#header {
+            div#hello-wrapper {
+                h6 {
+                    font-size: 23px; // full size is 25px
+                }
+                h1 {
+                    font-size: 100px * .8; // full size is 100px
+                    letter-spacing: 15px * .8; // full size is 15px
+                }
+                h4 {
+                    font-size: 35px; // full size is 40px
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $medium) {
+    body {
+        div#header {
+            white-space: normal;
+
+            div#hello-wrapper {
+                padding: 0 10px;
+                h6 {
+                    font-size: 20px; // full size is 25px
+                }
+                h1 {
+                    font-size: 100px * .6; // full size is 100px
+                    letter-spacing: 3px; // full size is 15px
+                }
+                h4 {
+                    font-size: 40px * .6; // full size is 40px
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 380px) {
+    body {
+        div#header {
+
+            div#hello-wrapper {
+                h6 {
+                    font-size: 20px; // full size is 25px
+                }
+                h1 {
+                    font-size: 50px; // full size is 100px
+                    letter-spacing: 2px; // full size is 15px
+                }
+                h4 {
+                    font-size: 23px; // full size is 40px
+                }
+            }
+        }
+    }
 }
