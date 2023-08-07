@@ -5,6 +5,7 @@
  * $accent: #55fbdc;
  * $white: #fff;
  * $black: #000;
+ * $dark-gray: #3d3d3d;
  *
  * $green: #1CED7D;
  */
@@ -19,9 +20,15 @@ div#container {
         width: min-content;
         margin: 10px auto;
         background-color: rgb(232, 232, 232);
-
+        
+        width: 600px;
+        @media only screen and (max-width: 660px) {
+            width: 90%;
+        }
+        
         div.info-container {
-            width: 600px;
+
+            padding: 10px;
 
             strong {
                 font-weight: 700;
@@ -29,6 +36,12 @@ div#container {
 
             div.date {
                 font-style: italic;
+                color: defaults.$dark-gray;
+                padding: 2px 0;
+            }
+
+            div.description {
+                text-align: justify;
             }
 
             div.link-bar {
