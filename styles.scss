@@ -16,6 +16,9 @@ $wide: 900px;
 $medium: 600px;
 $small: 500px;
 
+// header screen sizes:
+$header-medium: 750px;
+
 body {
     // background-color: defaults.$primary;
 
@@ -60,7 +63,7 @@ body {
                 // width: fit-content;
                 // margin: auto;
                 display: inline-block;
-                text-align: center;
+                text-align: left;
                 color: defaults.$white;
                 font-weight: 900;
                 font-size: 100px;
@@ -216,24 +219,7 @@ body {
 }
 
 @media only screen and (max-width: $wide) {
-    // TODO: change the font sizes to be relative to the screen size
     body {
-        div#header {
-            div#hello-wrapper {
-                h6 {
-                    font-size: 25px;
-                }
-                h1 {
-                    font-size: 100px;
-                    letter-spacing: 15px;
-                }
-                h4 {
-                    font-size: 40px;
-                }
-            }
-    
-        }
-    
         div#panel-wrapper {
             div.panel {
                 width: 100%;
@@ -377,6 +363,66 @@ body {
                     p {
                         font-size: 16px;
                     }
+                }
+            }
+        }
+    }
+}
+
+// NOW TO DEAL WITH HEADER DYNAMICNESS:
+@media only screen and (max-width: $header-medium) {
+    body {
+        div#header {
+            div#hello-wrapper {
+                h6 {
+                    font-size: 23px; // full size is 25px
+                }
+                h1 {
+                    font-size: 100px * .8; // full size is 100px
+                    letter-spacing: 15px * .8; // full size is 15px
+                }
+                h4 {
+                    font-size: 35px; // full size is 40px
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $medium) {
+    body {
+        div#header {
+            white-space: normal;
+
+            div#hello-wrapper {
+                padding: 0 10px;
+                h6 {
+                    font-size: 20px; // full size is 25px
+                }
+                h1 {
+                    font-size: 100px * .6; // full size is 100px
+                    letter-spacing: 3px; // full size is 15px
+                }
+                h4 {
+                    font-size: 40px * .6; // full size is 40px
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 380px) {
+    body {
+        div#header {
+
+            div#hello-wrapper {
+                h6 {
+                    font-size: 20px; // full size is 25px
+                }
+                h1 {
+                    font-size: 50px; // full size is 100px
+                    letter-spacing: 2px; // full size is 15px
+                }
+                h4 {
+                    font-size: 23px; // full size is 40px
                 }
             }
         }

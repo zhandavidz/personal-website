@@ -51,7 +51,7 @@ body div#header div#hello-wrapper h6 {
 }
 body div#header div#hello-wrapper h1 {
   display: inline-block;
-  text-align: center;
+  text-align: left;
   color: #fff;
   font-weight: 900;
   font-size: 100px;
@@ -606,16 +606,6 @@ body div#panel-wrapper div#about-panel div#about-me-wrapper p a:hover {
 }
 
 @media only screen and (max-width: 900px) {
-  body div#header div#hello-wrapper h6 {
-    font-size: 25px;
-  }
-  body div#header div#hello-wrapper h1 {
-    font-size: 100px;
-    letter-spacing: 15px;
-  }
-  body div#header div#hello-wrapper h4 {
-    font-size: 40px;
-  }
   body div#panel-wrapper div.panel {
     width: 100%;
   }
@@ -702,5 +692,47 @@ body div#panel-wrapper div#about-panel div#about-me-wrapper p a:hover {
   }
   body div#panel-wrapper div#about-panel div#about-me-wrapper p {
     font-size: 16px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  body div#header div#hello-wrapper h6 {
+    font-size: 23px;
+  }
+  body div#header div#hello-wrapper h1 {
+    font-size: 80px;
+    letter-spacing: 12px;
+  }
+  body div#header div#hello-wrapper h4 {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body div#header {
+    white-space: normal;
+  }
+  body div#header div#hello-wrapper {
+    padding: 0 10px;
+  }
+  body div#header div#hello-wrapper h6 {
+    font-size: 20px;
+  }
+  body div#header div#hello-wrapper h1 {
+    font-size: 60px;
+    letter-spacing: 3px;
+  }
+  body div#header div#hello-wrapper h4 {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  body div#header div#hello-wrapper h6 {
+    font-size: 20px;
+  }
+  body div#header div#hello-wrapper h1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+  }
+  body div#header div#hello-wrapper h4 {
+    font-size: 23px;
   }
 }
