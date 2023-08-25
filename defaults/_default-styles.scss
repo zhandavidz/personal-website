@@ -8,9 +8,13 @@ $dark-gray: #565656;
 // other potential accent colors:
 $green: #1CED7D;
 
+// font defaults
+$sans-serif-font: "Roboto", Helvetica, sans-serif;
+$mono-font: "Roboto Mono", Courier, monospace;
+
 // reset defaults
 body {
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: $sans-serif-font;
     font-weight: 400;
     color: $black;
     margin: 0;
