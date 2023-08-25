@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
   font-weight: 400;
   color: #000;
   margin: 0;
@@ -31,7 +31,7 @@ body h2 a {
 }
 body div#header {
   background-color: #3828ee;
-  background-image: url("/assets/placeholder-wideshot-4000x1800.jpg");
+  background-image: url("/assets/monterey-wide-6000x2700.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
