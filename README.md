@@ -1,6 +1,8 @@
 # My Personal Website
 
-A repo for my personal website, which is currently live at [davidzhan.com](https://davidzhan.com). There are plans to upgrade this and make this look nicer in the future.
+A repo for my personal website, which is currently live at [davidzhan.com](https://davidzhan.com). This is been hosted on many platforms in the past, but is currently hosted using [Cloudflare Pages](https://pages.cloudflare.com/).
+
+There are plans to upgrade this and make this look nicer in the future.
 
 ## Favicons
 
