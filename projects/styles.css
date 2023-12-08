@@ -41,10 +41,18 @@ div#container div.project div.info-container {
 div#container div.project div.info-container strong {
   font-weight: 700;
 }
-div#container div.project div.info-container div.date {
-  font-style: italic;
+div#container div.project div.info-container div.details {
   color: #565656;
-  padding: 2px 0;
+  display: block;
+}
+div#container div.project div.info-container div.details div {
+  display: inline-block;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+div#container div.project div.info-container div.details div.date {
+  font-style: italic;
+  float: right;
 }
 div#container div.project div.info-container div.description {
   text-align: justify;

@@ -34,11 +34,29 @@ div#container {
                 font-weight: 700;
             }
 
-            div.date {
-                font-style: italic;
+            div.details {
                 color: defaults.$dark-gray;
-                padding: 2px 0;
+                display: block;
+                
+                div {
+                    display: inline-block;
+                    $top-bottom-padding: 4px;
+                    padding-top: $top-bottom-padding;
+                    padding-bottom: $top-bottom-padding;
+                }
+
+                div.date {
+                    font-style: italic;
+                    // padding-left: 0;
+                    float: right;
+                }
+                div.skills {
+                    // padding-left: 20px;
+                    // float: left;
+                }
+    
             }
+
 
             div.description {
                 text-align: justify;
