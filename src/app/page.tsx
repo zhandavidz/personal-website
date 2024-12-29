@@ -1,6 +1,5 @@
 import ExportedImage from "next-image-export-optimizer";
 import testPictureStatic from "../../public/images/me.jpg";
-import ThemeToggle from "@/theme-toggle";
 
 export default function Home() {
   return (
@@ -14,7 +13,6 @@ export default function Home() {
         width={500}
         height={500}
       />
-      <ThemeToggle />
     </div>
   );
 }
