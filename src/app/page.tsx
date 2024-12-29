@@ -1,5 +1,5 @@
 import ExportedImage from "next-image-export-optimizer";
-import testPictureStatic from "../..//public/images/me.jpg";
+import testPictureStatic from "../../public/images/me.jpg";
 
 export default function Home() {
   return (
