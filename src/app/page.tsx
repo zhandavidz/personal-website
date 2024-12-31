@@ -21,7 +21,7 @@ export default function Home() {
         <p>I am a graduating senior majoring in Computer Science at the University of Massachusetts Amherst, and I am excited to be continuing my education in the accelerated master&apos;s program. I have a strong foundation in software development, with experience in various programming languages and frameworks. I am currently seeking software engineering internships to further develop my skills and gain practical experience in the industry. My interests include web/app development, machine learning, and networking. In my free time, I enjoy working on personal projects, taking photos of cool cars, and finding new food places in my neighborhood.</p> */}
 
         <div className="space-y-4">
-          <h1 className="text-3xl font-bold">Hi, I&apos;m David. I&apos;m a software developer</h1>
+          <h1 className="text-3xl font-bold">Hi, I&apos;m David. I&apos;m a software developer.</h1>
           {/* <p className="text-lg">
             student, software developer, full-stack web developer, car enthusiast, 
             occasional gym-goer, and computer nerd.
