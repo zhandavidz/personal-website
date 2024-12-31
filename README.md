@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Personal Website
+
+A repo for my personal website, which is currently live at [davidzhan.com](https://davidzhan.com). This is been hosted on many platforms in the past, but is currently hosted using [Cloudflare Pages](https://pages.cloudflare.com/).
+
+There are plans to upgrade this and make this look nicer in the future.
 
 ## Getting Started
 
@@ -20,12 +24,6 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Sources
+## Credits
 
-LinkedIn and GitHub icons courtesy of [tabler.io/icons](https://tabler.io/icons)
-
-Navbar styling and icons courtesy of @headlessui and @heroicons
-
-Next.js static export image optimization courtesy of [`next-image-export-optimizer`](https://www.npmjs.com/package/next-image-export-optimizer)
-
-Light and dark mode light-switch courtesy of [cruip.com](https://cruip.com/implementing-tailwind-css-dark-mode-toggle-with-no-flicker/#dark-mode-implementation-with-nextjs) (with MANY edits to make it actually work, the given code does NOT work out of the box :)
+There were several sites where I learned a lot of information on or used CC0/Unlicense code, and I give them all credit in [CREDITS.md](/CREDITS.md). This is both to give them credit and so I know where to look for more info when I want to do the same thing again in the future.
