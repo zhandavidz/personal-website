@@ -4,11 +4,15 @@ import ExportedImage from "next-image-export-optimizer";
 import logoTransparent from "../../public/images/logo-transparent.png";
 import ThemeToggle from "@/components/theme/ThemeToggle";
 
+// const navigation = [
+//   { name: 'Dashboard', href: '#', current: true },
+//   { name: 'Team', href: '#', current: false },
+//   { name: 'Projects', href: '#', current: false },
+//   { name: 'Calendar', href: '#', current: false },
+// ]
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'About', href: '#', current: true },
+  { name: 'Resume', href: '/resume.pdf', current: false },
 ]
 
 function classNames(...classes: string[]) {
