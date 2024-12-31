@@ -37,8 +37,8 @@ export default function Home() {
           <p className="text-lg">
             I am a graduating senior majoring in Computer Science at the University of Massachusetts Amherst, and I am excited to be continuing my education in the accelerated master&apos;s program. I have a strong foundation in software development, with experience in various programming languages and frameworks. I am currently seeking software engineering internships to further develop my skills and gain practical experience in the industry. My interests include web/app development, machine learning, and networking. In my free time, I enjoy working on personal projects, taking photos of cool cars, and finding new food places in my neighborhood.
           </p>
-          <p className="text-lg">
-            Note that this website is still under construction. You can preview the current progress at <Link href="https://preview.davidzhan.com" className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:underline">preview.davidzhan.com</Link>.
+          <p className="text-lg italic text-gray-600 dark:text-gray-400">
+            Note that this website is still under development. You can preview the current progress at <Link href="https://preview.davidzhan.com" className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:underline">preview.davidzhan.com</Link>.
           </p>
         </div>
       </div>
