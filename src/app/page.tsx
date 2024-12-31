@@ -3,6 +3,8 @@ import ExportedImage from "next-image-export-optimizer";
 import testPictureStatic from "../../public/images/me.png";
 
 import Badge from "@/components/Badge";
+import ThemeToggle from "@/components/theme/ThemeToggle";
+
 import Link from "next/link";
 
 export default function Home() {
@@ -40,6 +42,7 @@ export default function Home() {
           <p className="text-lg italic text-gray-600 dark:text-gray-400">
             Note that this website is still under development. You can preview the current progress at <Link href="https://preview.davidzhan.com" className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:underline">preview.davidzhan.com</Link>.
           </p>
+          <p>Note that you can play around with this cool theme toggler! <ThemeToggle /></p>
         </div>
       </div>
 
