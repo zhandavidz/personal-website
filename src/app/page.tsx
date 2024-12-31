@@ -1,3 +1,4 @@
+'use client';
 import ExportedImage from "next-image-export-optimizer";
 import testPictureStatic from "../../public/images/me.png";
 
@@ -24,7 +25,10 @@ export default function Home() {
             occasional gym-goer, and computer nerd.
           </p> */}
           <p className="text-lg">
-            <span className="font-semibold">Currently:</span> Undergraduate Course Assistant @ UMass Amherst
+            <span className="font-semibold">Current Work:</span> Undergraduate Course Assistant @ UMass Amherst
+          </p>
+          <p className="text-lg">
+            <span className="font-semibold">Current Projects:</span> (this) Personal Website, Expenser
           </p>
         </div>
 
@@ -32,6 +36,9 @@ export default function Home() {
         <div className="space-y-4">
           <p className="text-lg">
             I am a graduating senior majoring in Computer Science at the University of Massachusetts Amherst, and I am excited to be continuing my education in the accelerated master&apos;s program. I have a strong foundation in software development, with experience in various programming languages and frameworks. I am currently seeking software engineering internships to further develop my skills and gain practical experience in the industry. My interests include web/app development, machine learning, and networking. In my free time, I enjoy working on personal projects, taking photos of cool cars, and finding new food places in my neighborhood.
+          </p>
+          <p className="text-lg">
+            Note that this website is still under construction. You can preview the current progress at <Link href="https://preview.davidzhan.com" className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:underline">preview.davidzhan.com</Link>.
           </p>
         </div>
       </div>
@@ -97,7 +104,7 @@ export default function Home() {
             </a>
           </div>
           {/* color scheme for github */}
-          <div className="basis-1/2 bg-gray-400 dark:bg-gray-600 hover:bg-gray-500  space-fill">
+          <div className="basis-1/2 bg-gray-300 dark:bg-gray-700 hover:bg-gray-400 dark:hover:bg-gray-600  space-fill">
             <a
               href="https://www.github.com/zhandavidz/"
               target="_blank"
@@ -122,19 +129,24 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="rounded-none h-10 bg-violet-300 dark:bg-violet-700 hover:bg-violet-400 dark:hover:bg-violet-600">
-          {/* mail symbol: zhandavidz@gmail.com */}
-          <a
-            href="mailto:zhandavidz@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full h-full flex items-center justify-center"
-          >
-            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round"  className="px-1 w-8 h-8 icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg> 
-             zhandavidz@gmail.com
-          </a>
+        <div className="rounded-none h-10 flex flex-row">
+          <div className="basis-full bg-green-200 dark:bg-green-800 hover:bg-green-300 dark:hover:bg-green-700">
+            <a
+              href="mailto:zhandavidz@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full h-full flex items-center justify-center"
+            >
+              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round"  className="px-1 w-8 h-8 icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg> 
+              zhandavidz@gmail.com
+            </a>
+          </div>
+          <button onClick={() => {navigator.clipboard.writeText("zhandavidz@gmail.com")}} className="basis-10 flex flex-col items-center justify-center bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 focus:bg-green-400 dark:focus:bg-green-600 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round"  className="w-4 h-4 icon icon-tabler icons-tabler-outline icon-tabler-copy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" /><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" /></svg>
+            <p className="text-xs">Copy</p>
+          </button>
         </div>
-        <div className="rounded-b-3xl bg-red-200 hover:bg-red-300 dark:bg-red-900 dark:hover:bg-red-800 h-10">
+        <div className="rounded-b-3xl bg-red-200 hover:bg-red-300 dark:bg-red-800 dark:hover:bg-red-700 h-10">
           <a
             href="/resume.pdf"
             target="_blank"
