@@ -6,36 +6,27 @@ import Badge from "@/components/Badge";
 import ThemeToggle from "@/components/theme/ThemeToggle";
 
 import Link from "next/link";
+import HiIntro from "@/components/home-specific/HiIntro";
 
 export default function Home() {
   return (
     <div
-      className="flex flex-col lg:flex-row justify-between items-center"
+      className="flex flex-col lg:flex-row justify-between items-center lg:px-8"
     >
+      <HiIntro wrapperStyles="space-y-4 m-8 order-1 lg:hidden" />
+
       {/* main "about me" section */}
       <div
-        className="lg:basis-2/3 m-8  space-y-8"
+        className="lg:basis-2/3 m-8 lg:space-y-8 order-3 lg:order-1"
       >
         {/* <h1>Hi, I&apos;m David Zhan. I&apos;m a software developer.</h1>
         <h1>Currently: Japan Intern / Undergraduate Course Assistant</h1>
         <p>I am a graduating senior majoring in Computer Science at the University of Massachusetts Amherst, and I am excited to be continuing my education in the accelerated master&apos;s program. I have a strong foundation in software development, with experience in various programming languages and frameworks. I am currently seeking software engineering internships to further develop my skills and gain practical experience in the industry. My interests include web/app development, machine learning, and networking. In my free time, I enjoy working on personal projects, taking photos of cool cars, and finding new food places in my neighborhood.</p> */}
 
-        <div className="space-y-4">
-          <h1 className="text-3xl font-bold">Hi, I&apos;m David. I&apos;m a software developer.</h1>
-          {/* <p className="text-lg">
-            student, software developer, full-stack web developer, car enthusiast, 
-            occasional gym-goer, and computer nerd.
-          </p> */}
-          <p className="text-lg">
-            <span className="font-semibold">Current Work:</span> Undergraduate Course Assistant @ UMass Amherst
-          </p>
-          <p className="text-lg">
-            <span className="font-semibold">Current Projects:</span> (this) Personal Website, Expenser
-          </p>
-        </div>
+        <HiIntro wrapperStyles="space-y-4 hidden lg:block" />
 
         {/* Elevator Pitch */}
-        <div className="space-y-4">
+        <div className="space-y-4 sm:px-8 lg:px-0">
           <p className="text-lg">
             I am a graduating senior majoring in Computer Science at the University of Massachusetts Amherst, and I am excited to be continuing my education in the accelerated master&apos;s program. I have a strong foundation in software development, with experience in various programming languages and frameworks. I am currently seeking software engineering internships to further develop my skills and gain practical experience in the industry. My interests include web/app development, machine learning, and networking. In my free time, I enjoy working on personal projects, taking photos of cool cars, and finding new food places in my neighborhood.
           </p>
@@ -50,7 +41,7 @@ export default function Home() {
 
       {/* "mini-resume area" */}
       <div
-        className="lg:basis-1/3 m-8 justify-between min-w-[310px] max-w-[370px]"
+        className="lg:basis-1/3 lg:m-8 justify-between min-w-[310px] max-w-[370px] order-2"
       >
         <div className="p-4 rounded-t-3xl bg-gray-200 dark:bg-gray-800">
           <div className="flex flex-row left-align items-center space-x-4">
