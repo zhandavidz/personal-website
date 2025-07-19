@@ -28,12 +28,13 @@ export default function Home() {
         {/* Elevator Pitch */}
         <div className="space-y-4 sm:px-8 lg:px-0">
           <p className="text-lg">
-            I am a graduating senior majoring in Computer Science at the University of Massachusetts Amherst, and I am excited to be continuing my education in the accelerated master&apos;s program. I have a strong foundation in software development, with experience in various programming languages and frameworks. I am currently seeking software engineering internships to further develop my skills and gain practical experience in the industry. My interests include web/app development, machine learning, and networking. In my free time, I enjoy working on personal projects, taking photos of cool cars, and finding new food places in my neighborhood.
+            I am a master&apos;s student studying Computer Science at the University of Massachusetts Amherst, having graduated <span className="italic">summa cum laude</span> with my Bachelor of Science in Computer Science this spring. I have a strong foundation in software development, with experience in various programming languages and frameworks. I am currently seeking software engineering internships to further develop my skills and gain practical experience in the industry. My interests include web/app development, machine learning, and networking. In my free time, I enjoy working on personal projects, taking photos of cool cars, and finding new food places in my neighborhood.
           </p>
           <p className="text-lg italic text-gray-600 dark:text-gray-400">
             Note that this website is still under development. You can preview the current progress at <Link href="https://preview.dzhan.dev" className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:underline">preview.dzhan.dev</Link>.
           </p>
-          <p>Note that you can play around with this cool theme toggler! <ThemeToggle /></p>
+          <p>Note that you can play around with this cool theme toggler!</p>
+          <ThemeToggle />
         </div>
       </div>
 
@@ -63,9 +64,11 @@ export default function Home() {
           </div>
           <h3 className="py-1">University of Massachusetts Amherst</h3>
           <p className="py-1 text-sm"><span className="font-bold">MS</span>, Computer Science <Badge color="white">May 2026</Badge></p>
+          <p className="py-1 pl-8 text-sm">GPA: <Badge>4.0</Badge></p>
           <p className="py-1 text-sm">BS, Computer Science <Badge color="white">May 2025</Badge></p>
-          <p className="py-1 text-sm">GPA: <Badge>3.98</Badge> (Major GPA: <Badge color="green">4.0</Badge>)</p>
-          <p className="py-1 text-sm">See: <Link href="#"><Badge color="yellow">Transcript</Badge></Link></p>
+          <p className="py-1 pl-8 text-sm">GPA: <Badge color="green">3.99</Badge> <span className="italic">summa cum laude</span></p>
+          {/* <p className="py-1 text-sm">MS GPA: <Badge>4.0</Badge> (BS GPA: <Badge color="green">3.99</Badge>)</p> */}
+          <p className="py-1 pl-8 text-sm">See: <Link href="/diploma.pdf"><Badge color="yellow">Diploma</Badge></Link></p>
         </div>
         <div className="flex flex-row rounded-none h-10">
           {/* color scheme for linkedin, but more subtle */}
@@ -135,7 +138,7 @@ export default function Home() {
               zhandavidz@gmail.com
             </a>
           </div>
-          <button onClick={() => {navigator.clipboard.writeText("zhandavidz@gmail.com")}} className="basis-10 flex flex-col items-center justify-center bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 focus:bg-green-400 dark:focus:bg-green-600 focus:outline-none">
+          <button onClick={() => {navigator.clipboard.writeText("zhandavidz@gmail.com")}} className="basis-10 flex flex-col items-center justify-center bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 active:bg-green-400 active:focus:bg-green-600 focus:outline-none">
             <svg xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round"  className="w-4 h-4 icon icon-tabler icons-tabler-outline icon-tabler-copy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" /><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" /></svg>
             <p className="text-xs">Copy</p>
           </button>
