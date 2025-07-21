@@ -28,7 +28,7 @@ export default function Home() {
         {/* Elevator Pitch */}
         <div className="space-y-4 sm:px-8 lg:px-0">
           <p className="text-lg">
-            I am a master&apos;s student studying Computer Science at the University of Massachusetts Amherst, having graduated <span className="italic">summa cum laude</span> with my Bachelor of Science in Computer Science this spring. I have a strong foundation in software development, with experience in various programming languages and frameworks. I am currently seeking software engineering internships to further develop my skills and gain practical experience in the industry. My interests include web/app development, machine learning, and networking. In my free time, I enjoy working on personal projects, taking photos of cool cars, and finding new food places in my neighborhood.
+            I am a master&apos;s student studying Computer Science at the University of Massachusetts Amherst, having graduated {/* <span className="italic">summa cum laude</span>  */}with my Bachelor of Science in Computer Science this spring. I have a strong foundation in software development, with experience in various programming languages and frameworks. I am currently seeking software engineering internships to further develop my skills and gain practical experience in the industry. My interests include web/app development, machine learning, and networking. In my free time, I enjoy working on personal projects, taking photos of cool cars, and finding new food places in my neighborhood.
           </p>
           <p className="text-lg italic text-gray-600 dark:text-gray-400">
             Note that this website is still under development. You can preview the current progress at <Link href="https://preview.dzhan.dev" className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:underline">preview.dzhan.dev</Link>.
@@ -66,7 +66,8 @@ export default function Home() {
           <p className="py-1 text-sm"><span className="font-bold">MS</span>, Computer Science <Badge color="white">May 2026</Badge></p>
           <p className="py-1 pl-8 text-sm">GPA: <Badge>4.0</Badge></p>
           <p className="py-1 text-sm">BS, Computer Science <Badge color="white">May 2025</Badge></p>
-          <p className="py-1 pl-8 text-sm">GPA: <Badge color="green">3.99</Badge> <span className="italic">summa cum laude</span></p>
+          <p className="py-1 pl-8 text-sm"><span className="italic">summa cum laude</span></p>
+          <p className="py-1 pl-8 text-sm">GPA: <Badge color="green">3.99</Badge></p>
           {/* <p className="py-1 text-sm">MS GPA: <Badge>4.0</Badge> (BS GPA: <Badge color="green">3.99</Badge>)</p> */}
           <p className="py-1 pl-8 text-sm">See: <Link href="/diploma.pdf"><Badge color="yellow">Diploma</Badge></Link></p>
         </div>
