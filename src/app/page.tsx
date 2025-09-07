@@ -3,7 +3,7 @@ import ExportedImage from "next-image-export-optimizer";
 import testPictureStatic from "../../public/images/me.png";
 
 import Badge from "@/components/Badge";
-import ThemeToggle from "@/components/theme/ThemeToggle";
+// import ThemeToggle from "@/components/theme/ThemeToggle";
 
 import Link from "next/link";
 import HiIntro from "@/components/home-specific/HiIntro";
