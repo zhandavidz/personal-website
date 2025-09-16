@@ -8,27 +8,16 @@ export default function HiIntro({ wrapperStyles }: { wrapperStyles: string }) {
 
             <div className="flex flex-row">
               <div className="text-lg mb-1 hidden md:block">
-                <span className="font-semibold">Current Work:&nbsp;</span>
+                <span className="font-semibold">Currently looking for:&nbsp;</span>
               </div>
               <div className="text-lg flex flex-col">
-                <span>
-                  Software Engineer @&nbsp;
-                  <a
-                    href="https://www.trumptech.com/en"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Trumptech Digital Education Services"
-                    className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:underline">Trumptech Digital Education Services</a>
-                </span>
-                <span className="italic text-opacity-50 text-black dark:text-white dark:text-opacity-50">
-                  (Part-Time during school while I pursue my Master&apos;s)
-                </span>
+                Full Time Software Engineer, Graduating Spring 2026 (US)
               </div>
             </div>
 
 
             <p className="text-lg hidden md:inline-block">
-              <span className="font-semibold">Current Projects:</span> (this) Personal Website, Expenser
+              <span className="font-semibold">Current projects:</span> (this) Personal Website, Expenser
             </p>
         </div>
     );
