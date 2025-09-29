@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        'lg': '1120px',
+        'lg': '1200px',
       },
       colors: {
         background: "var(--background)",
