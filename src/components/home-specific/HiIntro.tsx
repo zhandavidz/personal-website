@@ -9,12 +9,11 @@ export default function HiIntro({ wrapperStyles }: { wrapperStyles: string }) {
 
             <div className="flex flex-row">
               <div className="text-xl mb-1 hidden md:block">
-                <span className="font-semibold">Current Work:&nbsp;</span>
+                <span className="font-semibold">Current:&nbsp;</span>
               </div>
               <div className="text-xl flex flex-col">
                 <span>
-                  Teaching Assistant @&nbsp;
-                  UMass Amherst
+                  Software Engineer @&nbsp;Vela&nbsp;Instruments
                   {/* <a
                     href="https://torqsports.com"
                     target="_blank"
@@ -31,10 +30,10 @@ export default function HiIntro({ wrapperStyles }: { wrapperStyles: string }) {
             <div className="hidden md:block">
               <div className="flex flex-row italic text-opacity-70 text-black dark:text-white dark:text-opacity-70">
                 <div className="text-lg mb-1">
-                  <span className="font-semibold">Currently looking for:&nbsp;</span>
+                  <span className="font-semibold">Looking for:&nbsp;</span>
                 </div>
                 <div className="text-lg flex flex-col">
-                  Full Time Software Engineer, Graduating Spring 2026 (US)
+                  Software Engineer, Infra/DevOps (Full Time New Grad, USA/Canada)
                 </div>
               </div>
             </div>
