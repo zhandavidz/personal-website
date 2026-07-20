@@ -13,13 +13,14 @@ export default function HiIntro({ wrapperStyles }: { wrapperStyles: string }) {
               </div>
               <div className="text-xl flex flex-col">
                 <span>
-                  Software Engineering Intern @&nbsp;
-                  <a
+                  Teaching Assistant @&nbsp;
+                  UMass Amherst
+                  {/* <a
                     href="https://torqsports.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="TORQ Sports"
-                    className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 hover:underline">TORQ Sports</a>
+                    className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 hover:underline">TORQ Sports</a> */}
                 </span>
                 {/* <span className="italic text-opacity-50 text-black dark:text-white dark:text-opacity-50">
                   (Part-Time during school while I pursue my Master&apos;s)
