@@ -28,7 +28,7 @@ export default function Home() {
         {/* Elevator Pitch */}
         <div className="space-y-4 sm:px-8 lg:px-0">
           <p className="text-lg">
-            I am a master&apos;s student studying Computer Science at the University of Massachusetts Amherst, having just graduated {/* <span className="italic">summa cum laude</span>  */}with my Bachelor of Science in Computer Science this spring. I have a strong foundation in software development, with experience in various programming languages and frameworks. I&apos;m currently working as a Teaching Assistant for CICS 110 (Foundations of Programming), having just completed my Software Engineering Internship at TORQ Sports, a media technology startup based in LA. This last summer, I worked as a Software Engineering Intern at Trumptech Digital Education Services, where I worked on full-stack projects, including an agentic workflow using LangChain. I am currently seeking full-time Software Engineer roles in the US. My interests include web/app development, Machine Learning, DevOps, and Networking. In my free time, I enjoy working on personal projects, taking photos of cool cars, and finding new food places in my neighborhood.
+            I am a software engineer currently working as contractor for Vela Instruments. Just this spring, I completed my Master of Science in Computer Science at the University of Massachusetts Amherst. {/*, having completed a BS in CS just graduated  <span className="italic">summa cum laude</span>  with my Bachelor of Science in Computer Science this spring. I have a strong foundation in software development, with experience in various programming languages and frameworks.*/} As a student, I worked as a Teaching Assistant for CICS 110 (Foundations of Programming) and completed several internships. Last fall I worked as a Software Engineering Intern at TORQ Sports, a media technology startup based in LA. The summer before that I worked as a Software Engineering Intern at Trumptech Digital Education Services where I worked on full-stack projects, including an agentic workflow using LangChain. I am currently seeking full-time Software Engineer roles in the US. My interests include web/app development, machine learning, infrastructure/DevOps, and networking. In my free time, I enjoy hiking, taking photos of cool stuff, running/working out, and finding new food places in my neighborhood.
           </p>
           {/* <p className="text-lg italic text-gray-600 dark:text-gray-400">
             Note that this website is still under development. You can preview the current progress at <Link href="https://preview.dzhan.dev" className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:underline">preview.dzhan.dev</Link>.
@@ -60,17 +60,23 @@ export default function Home() {
               <h1 className="font-bold">David Zhan</h1>
               <h1>
                 <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round"  className="inline pe-1 w-7 h-7 icon icon-tabler icons-tabler-outline icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg> 
-                <Badge color="blue" size="small">Albany, CA</Badge> <Badge color="green" size="small">Amherst, MA</Badge></h1>
+                <Badge color="blue" size="small">Albany, CA</Badge> <Badge color="green" size="small">SF Bay Area</Badge></h1>
+                {/* <Badge color="blue" size="small">Albany, CA</Badge> <Badge color="green" size="small">Amherst, MA</Badge></h1> */}
             </div>
           </div>
+
           <h3 className="py-1">University of Massachusetts Amherst</h3>
+
           <p className="py-1 text-sm"><span className="font-bold">MS</span>, Computer Science <Badge color="white">May 2026</Badge></p>
           <p className="py-1 pl-8 text-sm">GPA: <Badge color="green">4.0</Badge></p>
+          <p className="py-1 pl-8 text-sm">See: <Link href="/diploma.pdf"><Badge color="yellow">Diploma</Badge></Link></p>
+
           <p className="py-1 text-sm">BS, Computer Science <Badge color="white">May 2025</Badge></p>
           <p className="py-1 pl-8 text-sm"><span className="italic">summa cum laude</span></p>
           <p className="py-1 pl-8 text-sm">GPA: <Badge color="green">3.99</Badge></p>
           {/* <p className="py-1 text-sm">MS GPA: <Badge>4.0</Badge> (BS GPA: <Badge color="green">3.99</Badge>)</p> */}
-          <p className="py-1 pl-8 text-sm">See: <Link href="/diploma.pdf"><Badge color="yellow">Diploma</Badge></Link></p>
+          <p className="py-1 pl-8 text-sm">See: <Link href="/bs_diploma.pdf"><Badge color="yellow">Diploma</Badge></Link></p>
+          
         </div>
         <div className="flex flex-row rounded-none h-10">
           {/* color scheme for linkedin, but more subtle */}
